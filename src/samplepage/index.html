@@ -1,0 +1,21 @@
+---
+layout: post
+title: Sample Content
+pre-title: Sample Pretitle
+---
+
+<div class="main-content" id="maincontent">
+  <h2 class="subtitle" id="subtitle"></h2>
+      {% assign sorted_pages = (site.parts | sort: 'order') %}
+      {% for page in sorted_pages %}
+        {% if page.parent == 'samplecontent' %}
+          {% include section.html %}
+        {% endif %}
+      {% endfor %}
+</div>
+
+
+
+
+
+

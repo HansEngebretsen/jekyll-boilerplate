@@ -1,0 +1,36 @@
+%center-absolute {
+  left:50%;
+  transform: translateX(-50%);
+}
+.dark-bg {
+  background-color: $black;
+}
+.inline {
+  display:inline-block;
+  vertical-align:middle;
+  float:none;
+}
+.inview {
+  opacity:1;
+  transition: 1700ms all;
+}
+.opaque {
+  opacity: 0;
+  transition: 0ms all;
+}
+.vertically-centered {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position:absolute;
+  &-md {
+    margin-top: 40px;
+    @include bp(screen-md){
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      position:absolute;
+    }
+  }
+
+}

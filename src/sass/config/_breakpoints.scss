@@ -1,0 +1,121 @@
+// Standard Breakpoints "Everything but [variable name]"
+// To use: @include bp(mobile-s){}
+
+// Element specific breakpoints
+
+
+// Bootstrap breakpoints
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+
+// Mobile, Phablet, Tablet, Desktop, TV
+$mobile-s: 360px;
+$mobile-m: 520px;
+$mobile-l: 620px;
+
+// Tablet, Phablet, Desktop, TV
+$tablet-s: 737px;
+$tablet-m: 900px;
+$tablet-l: 1000px;
+
+// Desktop, TV
+$desktop-s: 1023px;
+$desktop-l: 1224px;
+
+// TV
+$tv-s: 1350px;
+$tv-m: 1440px;
+$tv-l: 1824px;
+
+
+@mixin bp($point) {
+  // Bootstrap breakpoints
+  @if $point == screen-xs {
+    @media (min-width:$screen-xs) {
+      @content;
+    }
+  }
+  @else if $point == screen-sm {
+    @media (min-width:$screen-sm) {
+      @content;
+    } // Everything minus Smallest Phones
+  }
+  @else if $point == screen-md {
+    @media (min-width:$screen-md) {
+      @content;
+    } // Everything minus Smallest Phones
+  }
+  @else if $point == screen-lg {
+    @media (min-width:$screen-lg) {
+      @content;
+    } // Everything minus Smallest Phones
+  }
+  // Mobile, Phablet, Tablet, Desktop, TV
+  @else if $point == mobile-s {
+    @media (min-width:$mobile-s) {
+      @content;
+    } // Everything minus Smallest Phones
+  }
+  @else if $point == mobile-m {
+    @media (min-width:$mobile-m) {
+      @content;
+    } // Everything minus medium phones
+  }
+  @else if $point == mobile-l {
+    @media (min-width:$mobile-l) {
+      @content;
+    } // Everything minus medium phones
+  }
+
+  // Tablet, Phablet, Desktop, TV
+  @else if $point == tablet-s {
+    @media (min-width:$tablet-s) {
+      @content;
+    } // Everything minus most phones
+  }
+  @else if $point == tablet-m {
+    @media (min-width:$tablet-m) {
+      @content;
+    } // Everything minus most phones
+  }
+  @else if $point == tablet-l {
+    @media (min-width:$tablet-l) {
+      @content;
+    } // Everything minus most phones & tablets
+  }
+
+
+  // Desktop, TV
+  @else if $point == desktop-s {
+    @media (min-width:$desktop-s) {
+      @content;
+    } // Everything minus most tablets & phones
+  }
+  @else if $point == desktop-l {
+    @media (min-width:$desktop-l) {
+      @content;
+    } // Everything minus Tablet, and Mobile
+  }
+
+  // Just TV
+  @else if $point == tv-s {
+    @media (min-width:$tv-s) {
+      @content;
+    } // Everything minus most Desktops
+  }
+  @else if $point == tv-m {
+    @media (min-width:$tv-m) {
+      @content;
+    } // Everything minus most Desktops
+  }
+  @else if $point == tv-l {
+    @media (min-width:$tv-l) {
+      @content;
+    } // Everything minus all Desktops
+  }
+
+  // Custom
+}

@@ -1,0 +1,57 @@
+* {
+    box-sizing:border-box;
+}
+html, body {
+    height:100%;
+    width:100%;
+    position:relative;
+}
+body {
+    overflow-x:hidden;
+}
+.container.ptop {
+    padding-top:10vh;
+}
+a:focus {
+    outline:0;
+}
+.bottom-left {
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+// Various Layout utilities
+.h100 {
+    height: 100vh;
+    &-md {
+        height: auto;
+        @include bp(screen-md){
+            height:100vh;
+        }
+    }
+}
+.h50 {
+    height:50vh;
+}
+.pl-40 {
+    padding-left: 40px;
+}
+.pr-40 {
+    padding-right: 40px;
+}
+.centered {
+    margin:0 auto;
+    float:none;
+}
+.mbot-80 {
+    margin-bottom: 80px;
+}
+.container {
+    // @include bp(tv-s){
+    //     width: 1300px;
+    // }
+    @include bp(tv-l){
+        width: 1300px;
+    }
+}
+

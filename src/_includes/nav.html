@@ -1,0 +1,27 @@
+<header class="header-wrap">
+  <a href="#" class="logo">Logo</a>
+</header>
+
+<nav id="navigation" class="navigation expanded">
+  <a href="#navContainer" class="navToggle toggle" id="navToggle" data-toggle="#navigation" data-overlay="true">Menu</a>
+  <div class="navContainer-wrap">
+    <div class="navContainer">
+      {% for link in site.navigation %}
+      <div class="navGroup expanded">
+          <h4 class="navGroup-title"><a href="#">{{ link.text }}</a></h4>
+            <ul>
+            {% for sublink in link.sublinks %}
+              {% assign current = nil %}
+              {% if page.url == sublink.suburl or page.layout == link.layout %}
+                {% assign current = 'current' %}
+              {% endif %}
+              <li class="navLink {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+                <a class="{{ current }}" href="{{ sublink.url }}">{{ sublink.subtext }}</a>
+              </li>
+            {% endfor %}
+            </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</nav>
