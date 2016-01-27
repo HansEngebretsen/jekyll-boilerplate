@@ -1,6 +1,5 @@
 # Numerous always-ignore extensions
-_htdocs
-_htdocs/**/*
+htdocs
 *.diff
 *.err
 *.orig
