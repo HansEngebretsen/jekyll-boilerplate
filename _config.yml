@@ -1,5 +1,5 @@
 #
-# This file contains configuration flags to customize your site
+# This file contains configuration flags to customize your site you'll find settings for sass, js, etc in the gruntfile.js
 #
 
 # Name of your site (displayed in the header)
