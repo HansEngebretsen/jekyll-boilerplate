@@ -1,17 +1,28 @@
 /*
 =======
-  Class Toggler
+  Generic Carousel
 
-  Add Class of "toggle" to element, as well as a 'data-toggle' attribvute
-  Function will toggle a class of active on the id or class associated with the attribute.
+  Toggles active class on next item. Pairs nicely with carousel.scss
+
+  || HTML structure ||
+  .cta-next, .cta-prev  =  Carousel next and previous toggles
+  +-- .carousel-wrap
+  |   +-- .carousel-item
+  |   +-- .carousel-item
+  |   +-- .cta-prev
+  |   +-- .cta-next
+
+  || Options ||
+  Add class Auto to .carousel-wrap to invoke automatic functionality
+
 =======
 */
 
-(function($, Sample) {
-  Sample.site = Sample.site || {};
-  _this = Sample.site;
+(function($, Garmin) {
+  Garmin.site = Garmin.site || {};
+  _this = Garmin.site;
 
-  var Carousel = function(){
+  var Carousel = function(e){
     this.showPrev = _this.__bind(this.showPrev, this);
     this.setVars = _this.__bind(this.setVars, this);
     this.init = _this.__bind(this.init, this);
@@ -22,40 +33,51 @@
       next       : '.cta-next',
       prev       : '.cta-prev'
     }
+    this.contextClasses  = {
+      car        : $(e),
+      caritem    : $(e).find('.carousel-item'),
+      next       : $(e).find('.cta-next'),
+      prev       : $(e).find('.cta-prev')
+    }
     this.elements = {};
   }
 
 
-  Carousel.prototype.setVars = function(e){
+  Carousel.prototype.setVars = function(e, clicky){
     var c  = this.classes,
         t  = this.elements;
-
-    t.carousel      = $(e.currentTarget).parents(c.car);
+    if (clicky == "true"){
+      t.carousel      = $(e.currentTarget).parents(c.car);
+      t.prev          = t.carousel.find(c.prev);
+      t.next          = t.carousel.find(c.next);
+    } else {
+      t.carousel      = $(e);
+    }
     t.carouselItems = t.carousel.find(c.caritem);
-    t.prev          = t.carousel.find(c.prev);
   }
 
   Carousel.prototype.showPrev = function(e){
     this.elements.prev.addClass('visible');
   }
 
-  Carousel.prototype.cycleClass = function(e, direction){
-    e.preventDefault();
-    // console.log(e.currentTarget);
-    this.setVars(e);
-    this.showPrev();
-
+  Carousel.prototype.cycleClass = function(e, direction, click){
+    if (click == "true"){
+      e.preventDefault();
+      this.setVars(e, click);
+      this.showPrev();
+    }else {
+      this.setVars(e, "false");
+    }
     var next,
         t  = this.elements,
-        current = $('.carousel-item.active');
-
+        current = t.carousel.find('.carousel-item.active');
     if (direction === "prev"){
-      next = current.prev();
+      next = current.prev(this.classes.caritem);
       if (next.length == 0) {
         next = t.carouselItems.last(); // Infinate
       }
     } else {
-      next    = current.next();
+      next    = current.next(this.classes.caritem);
       if (next.length == 0) {
         next = t.carouselItems.first(); // Infinate
       }
@@ -65,23 +87,32 @@
   }
 
   Carousel.prototype.init = function(e){
-    var direction;
-    console.log($(this.classes.next));
-    var _this = this;
-    $(this.classes.prev).click(function(e) {
+    var direction, carouselItems,
+        direction = "next",
+        click     = "true";
+
+    this.elements.car = this.contextClasses.car;
+
+    var __this = this;
+    $(this.contextClasses.prev).click(function(e) {
       direction = "prev";
-      _this.cycleClass(e, direction);
+      __this.cycleClass(e, direction, click);
     });
-    $(this.classes.next).click(function(e) {
-      direction = "next";
-      _this.cycleClass(e, direction);
+    $(this.contextClasses.next).click(function(e) {
+      __this.cycleClass(e, direction, click);
+    });
+    this.elements.car.each(function(i, e){
+      if ($(e).hasClass('auto')){
+        click = "false";
+        setInterval(function(){__this.cycleClass(e, direction, click)}, 6000);
+      }
     });
   }
 
   // Instantiation
-  _this.carousel = new Carousel(); // attach carousel to global
-  if ($('.carousel')){
-    _this.carousel.init();
-  }
+  // this.carousel = new Carousel(); // attach carousel to global
+  $('.carousel-wrap').each(function(i, e){
+    new Carousel(e).init(e);
+  });
 
-})(jQuery, window.Sample = window.Sample || {});
+})(jQuery, window.Garmin = window.Garmin || {});

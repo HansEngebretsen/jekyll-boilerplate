@@ -5,15 +5,18 @@
   Instatiating the waypoints library for scrolling functions
   Check out http://imakewebthings.com/waypoints/guides/getting-started/ for documentation on waypoints.
 
+  || Usage ||
+  Add class inview to element, and it will toggle the class opaque off upon entry to viewport
+
 =======
 */
 
-(function($, Sample) {
-  Sample.site = Sample.site || {};
-  _this = Sample.site;
+(function($, Garmin) {
+  Garmin.site = Garmin.site || {};
+  _this = Garmin.site;
   var Waypoints = function(){
     this.introSlide = _this.__bind(this.introSlide, this);
-    this.breadCrumb = _this.__bind(this.breadCrumb, this);
+    this.navScroll = _this.__bind(this.navScroll, this);
     this.subTitle = _this.__bind(this.subTitle, this);
     this.viewable = _this.__bind(this.viewable, this);
     this.init = _this.__bind(this.init, this);
@@ -73,20 +76,22 @@ Waypoints.prototype.viewable = function(e){
 
 }
 
-Waypoints.prototype.breadCrumb = function(e){
-  var breadcrumbs = this.elements.breadcrumbs;
-  var waypointr = new Waypoint({
-    element: breadcrumbs,
+
+Waypoints.prototype.navScroll = function(e){
+  var navigation = $('#navigation');
+  var waypointrs = new Waypoint({
+    element: navigation,
     handler: function(direction){
       if (direction == 'down' ){
-        breadcrumbs.addClass('invisible');
+        navigation.removeClass('active');
       } else if (direction == 'up'){
-        breadcrumbs.removeClass('invisible');
+        navigation.addClass('active');
       }
     },
-    offset: -10
+    offset: -20
   })
 }
+
 Waypoints.prototype.subTitle = function(e){
   var subtitle = this.elements.subtitle,
       sections = this.elements.sections;
@@ -99,7 +104,6 @@ Waypoints.prototype.subTitle = function(e){
   }
   var bumpnswap = function(dat){
     var name = $(dat).data('subtitle');
-    console.log(name);
     bump(name);
   }
   bumpnswap(sections); // get the first name on load
@@ -124,14 +128,17 @@ Waypoints.prototype.subTitle = function(e){
 }
 
 Waypoints.prototype.init = function(e){
-  this.introSlide();
   this.breadCrumb();
   this.subTitle();
   this.viewable();
-
+  var mqTablet = window.matchMedia( "( min-width: 620px )");
+  if (mqTablet.matches){
+    this.introSlide();
+    this.navScroll();
+  }
 }
 
  // Instantiation
  _this.waypoints = new Waypoints(); // attach waypoints to global
  _this.waypoints.init();
-})(jQuery, window.Sample = window.Sample || {});
+})(jQuery, window.Garmin = window.Garmin || {});
