@@ -1,6 +1,4 @@
-// To DO , abstract stylings
-
-
+// Button styling
 .btn, a.btn {
   display: inline-block;
   padding: 13px 17px;
@@ -9,9 +7,9 @@
   transition: 100ms all;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: $aqua;
+  color: $blue;
   &:hover {
-    background-color: darken($aqua, 10%);
+    background-color: darken($blue, 10%);
   }
 }
 %icon-after {
@@ -33,7 +31,7 @@
 .btn-primary, a.btn-primary {
   @extend .btn;
   color: white;
-  background-color: $aqua;
+  background-color: $blue;
   .dark-bg &{
     color: $black;
   }
@@ -106,7 +104,7 @@
 }
 .btn-arrow-right-dark, a.btn-arrow-right-dark {
   @extend .btn-arrow-right;
-  background-color:$aqua;
+  background-color:$blue;
   color:white;
   &:after {
     background-image: url('../img/icon-skinnyarrow-white.png');
@@ -118,12 +116,12 @@
   @extend %icon-after;
   width:50px;
   height:50px;
-  @include bp(tablet){
+  @include bp(tablet-s){
     width:30px;
     height:30px;
   }
   display:block;
-  background-color:rgba($aqua, .6);
+  background-color:rgba($blue, .6);
   text-align:center;
   &:after {
     width: 15px;
