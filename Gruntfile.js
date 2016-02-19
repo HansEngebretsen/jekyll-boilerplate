@@ -42,15 +42,25 @@ module.exports = function(grunt) {
         },
 
         sass: {
-            dist: {
-                options: {
-                    style: 'compressed'
-                },
-                files: {
-                    'htdocs/css/styles.css': 'src/sass/styles.scss'
-                }
-            }
-        },
+             dev: {
+                 options: {
+                     outputStyle: 'expanded',
+                     sourceComments: 'true',
+                     sourcemap: 'file'
+                 },
+                 files: {
+                     'htdocs/css/styles.css': 'src/sass/styles.scss'
+                 }
+             },
+             prod: {
+               options: {
+                   outputStyle: 'compressed'
+               },
+               files: {
+                   'htdocs/css/styles.min.css': 'src/sass/styles.scss'
+               }
+             }
+         },
          autoprefixer: {
             options: {
               browsers: ['last 13 versions', '> 5%','ie 8', 'ie 7','ie 9']

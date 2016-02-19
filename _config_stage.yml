@@ -1,0 +1,8 @@
+#
+# This file contains the stage base URL for the site
+# To build using stage settings, run 'jekyll build --config _config.yml, _config_stage.yml'
+#
+
+# Name of your site (Name of Stage URL)
+environment: stage
+# baseurl: //www.productionurl.com
