@@ -11,9 +11,9 @@
 =======
 */
 
-(function($, Garmin) {
-  Garmin.site = Garmin.site || {};
-  _this = Garmin.site;
++function($, Site) {
+  Site.site = Site.site || {};
+  _this = Site.site;
   var Waypoints = function(){
     this.introSlide = _this.__bind(this.introSlide, this);
     this.navScroll = _this.__bind(this.navScroll, this);
@@ -128,6 +128,7 @@ Waypoints.prototype.subTitle = function(e){
 }
 
 Waypoints.prototype.init = function(e){
+  Site.site.utils.classToElem(this); // Make Elements from Classes
   this.breadCrumb();
   this.subTitle();
   this.viewable();
@@ -141,4 +142,4 @@ Waypoints.prototype.init = function(e){
  // Instantiation
  _this.waypoints = new Waypoints(); // attach waypoints to global
  _this.waypoints.init();
-})(jQuery, window.Garmin = window.Garmin || {});
+}(jQuery, window.Site = window.Site || {});

@@ -8,9 +8,9 @@
 =======
 */
 
-(function($, Sample) {
-  Sample.site = Sample.site || {};
-  _this = Sample.site;
++function($, Site) {
+  Site.site = Site.site || {};
+  _this = Site.site;
   var tclass = $('.toggle');
 
   var toggle = function(e){
@@ -78,4 +78,4 @@
     });
   }
 
-})(jQuery, window.Sample = window.Sample || {});
+}(jQuery, window.Site = window.Site || {});

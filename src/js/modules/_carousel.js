@@ -18,9 +18,9 @@
 =======
 */
 
-(function($, Garmin) {
-  Garmin.site = Garmin.site || {};
-  _this = Garmin.site;
++function($, Site) {
+  Site.site = Site.site || {};
+  _this = Site.site;
 
   var Carousel = function(e){
     this.showPrev = _this.__bind(this.showPrev, this);
@@ -115,4 +115,4 @@
     new Carousel(e).init(e);
   });
 
-})(jQuery, window.Garmin = window.Garmin || {});
+}(jQuery, window.Site = window.Site || {});
