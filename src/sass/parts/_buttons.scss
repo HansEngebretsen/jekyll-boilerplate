@@ -137,24 +137,6 @@
   }
 }
 
-// .scroll-left {
-//     @extend %vertically-centered;
-//     position: absolute;
-//     z-index: 100;
-//     top: 50%;
-//     left: -15px;
-//     &:after {
-//       background-image: url('../img/ui/arrow-thick-left.png');
-//       background-image: url('../img/ui/arrow-thick-left.svg');
-//     }
-// }
-// .scroll-right {
-//     @extend %vertically-centered;
-//     position: absolute;
-//     z-index: 100;
-//     top: 50%;
-//     right: -15px;
-// }
 .btn-submit {
   @extend .btn-primary;
 }
