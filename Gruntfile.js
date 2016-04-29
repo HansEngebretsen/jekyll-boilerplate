@@ -83,7 +83,7 @@ module.exports = function(grunt) {
             options: {
                 watchTask: true,
                 server: {
-                    baseDir: "_site"
+                    baseDir: "htdocs"
                 }
             }
         },
@@ -137,4 +137,5 @@ module.exports = function(grunt) {
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 
     grunt.registerTask('default', ['concat', 'uglify', 'sass', 'autoprefixer']);
+     grunt.registerTask('watchs', ['browserSync', 'watch'] );
 };
