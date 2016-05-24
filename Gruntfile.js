@@ -67,7 +67,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'style.css': 'style.css'
+                    'htdocs/css/styles.css': 'htdocs/css/styles.css'
                 }
             }
 
@@ -90,52 +90,51 @@ module.exports = function(grunt) {
 
 
 
-       watch: {
+    watch: {
 
-            options: { livereload: true },
-
-            scripts: {
-              files: ['src/js/**/*.js'],
-              tasks: ['concat', 'uglify'],
-              options: {
-                spawn: false,
-              }
-            },
-            css: {
-              files: ['src/sass/**/*.scss'],
-              // tasks: ['sass', 'autoprefixer', 'browserSync'],
-              tasks: ['sass', 'autoprefixer'],
-              options: {
-                spawn: false,
-              }
-            },
-            images: {
-              files: ['src/img/**/*.{png,jpg,gif}', 'src/img/*.{png,jpg,gif}'],
-              tasks: ['imagemin'],
-              options: {
-                spawn: false,
-              }
-            }
-
-
-        }
+         options: { livereload: true },
+         scripts: {
+           files: ['src/js/**/*.js'],
+           tasks: ['concat', 'uglify'],
+           options: {
+             spawn: false,
+           }
+         },
+         css: {
+           files: ['src/sass/**/*.scss'],
+           // tasks: ['sass', 'autoprefixer', 'browserSync'],
+           tasks: ['sass', 'autoprefixer', 'browserSync'],
+           options: {
+             spawn: false,
+           }
+         },
+         images: {
+           files: ['src/img/**/*.{png,jpg,gif}', 'src/img/*.{png,jpg,gif}'],
+           tasks: ['imagemin'],
+           options: {
+             spawn: false,
+           }
+         }
 
 
-
-    });
-
-    // 3. Where we tell Grunt we plan to use this plug-in.
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-sass');
-    grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-browser-sync');
+     }
 
 
-    // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 
-    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'autoprefixer']);
-     grunt.registerTask('watchs', ['browserSync', 'watch'] );
+ });
+
+ // 3. Where we tell Grunt we plan to use this plug-in.
+ grunt.loadNpmTasks('grunt-contrib-concat');
+ grunt.loadNpmTasks('grunt-contrib-uglify');
+ grunt.loadNpmTasks('grunt-contrib-imagemin');
+ grunt.loadNpmTasks('grunt-sass');
+ grunt.loadNpmTasks('grunt-autoprefixer');
+ grunt.loadNpmTasks('grunt-contrib-watch');
+ grunt.loadNpmTasks('grunt-browser-sync');
+
+
+ // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
+
+ grunt.registerTask('default', ['concat', 'uglify', 'sass', 'autoprefixer']);
+ grunt.registerTask('watchs', ['browserSync', 'watch'] );
 };
