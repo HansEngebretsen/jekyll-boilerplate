@@ -11,12 +11,8 @@
   <meta name="viewport" content="width=device-width">
   {% if site.environment == "prod" || site.enviroment == "stage" %}
     <link rel="stylesheet" href="{{ site.baseurl }}css/styles.min.css">
-        <script>alert('{{ site.environment }}')</script>
-
   {% else %}
     <link rel="stylesheet" href="{{ site.baseurl }}css/styles.css">
-     <script>alert('{{ site.environment }}')</script>
-
   {% endif %}
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,800,300' rel='stylesheet' type='text/css'>
 </head>
