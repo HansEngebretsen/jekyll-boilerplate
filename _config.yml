@@ -8,6 +8,7 @@ name: Site Name
 # Short bio or description (displayed in the header)
 description: Site Description
 
+environment: dev
 # Global Navigation
 navigation:
 - text: Group1
@@ -35,10 +36,6 @@ social-links:
 
   linkedin: hansenge
   github: https://github.com/HansEngebretsen
-
-
-# Uncomment and enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-# google_analytics: UA-2110908-2
 
 
 #

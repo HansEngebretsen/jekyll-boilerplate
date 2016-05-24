@@ -1,6 +1,6 @@
 #
 # This file contains the prod base URL for the site
-# To build using prod settings, run 'jekyll build --config _config.yml, _config_prod.yml'
+# To build using prod settings, run 'jekyll build --config "_config.yml, _config_prod.yml"'
 #
 
 # Name of your site (displayed in the header)
