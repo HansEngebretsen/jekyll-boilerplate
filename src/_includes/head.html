@@ -9,6 +9,10 @@
   <title>{% if page.description %}{{ page.description }}{% else %}{{ site.name }}{% endif %}{% if page.title %} | {{ page.title }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width">
+
+  {% include favicon.html %}
+  {% include analytics.html %}
+
   {% if site.environment == "prod" || site.enviroment == "stage" %}
     <link rel="stylesheet" href="{{ site.baseurl }}css/styles.min.css">
   {% else %}
