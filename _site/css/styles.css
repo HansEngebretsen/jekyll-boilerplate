@@ -1,3 +1,8 @@
+/* ====================
+
+Imports for any vendor generated sass.
+
+======================= */
 /*! normalize.css v1.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -2065,6 +2070,11 @@ body .col-centered {
   margin: 0 auto;
 }
 
+/* ====================
+
+Imports for config elements
+
+======================= */
 /*
   Global Color Variables
 */
@@ -2072,65 +2082,71 @@ body .col-centered {
 
 Breakpoints Mixin
 
-Imported by global.scss
-
-USAGE: In any sass declaration, use @include
+Imported by global.scss, included throughout sassUSAGE: In any sass declaration, to include breakpont use:
+    @include bp([breakpoint name]){ }
 
 ======================= */
-/*
-  Global Typographic Styles
-*/
-/* line 4, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_typography.scss */
+/* ====================
+
+Global typographic styles and resets
+
+======================= */
+/* line 7, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_typography.scss */
 h1, h2, h3, h4, .navLink a {
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 19, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_typography.scss */
+/* line 22, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_typography.scss */
 html {
   font-size: 18px;
   color: white;
 }
 
-/* line 23, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_typography.scss */
+/* line 26, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_typography.scss */
 a {
   text-decoration: none;
   color: white;
   font-weight: 700;
 }
 
-/* line 28, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_typography.scss */
+/* line 31, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_typography.scss */
 h1 {
   margin: 0.4em 0;
   font-weight: 700;
   color: white;
 }
 
-/* line 35, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_typography.scss */
+/* line 38, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_typography.scss */
 p {
   color: #ACAFB5;
   font-size: .75em;
   line-height: 1.4;
 }
 
-/* line 44, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_typography.scss */
+/* line 47, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_typography.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 5, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_utilities.scss */
+/* ====================
+
+Global utilites generally used for styles and used in extends
+
+======================= */
+/* line 12, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_utilities.scss */
 .dark-bg {
   background-color: #484848;
 }
 
-/* line 8, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_utilities.scss */
+/* line 15, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_utilities.scss */
 .inline {
   display: inline-block;
   vertical-align: middle;
   float: none;
 }
 
-/* line 13, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_utilities.scss */
+/* line 20, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_utilities.scss */
 .inview {
   opacity: 1;
   -webkit-transition: 1700ms all;
@@ -2139,7 +2155,7 @@ p {
   transition: 1700ms all;
 }
 
-/* line 17, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_utilities.scss */
+/* line 24, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_utilities.scss */
 .opaque {
   opacity: 0;
   -webkit-transition: 0ms all;
@@ -2148,7 +2164,7 @@ p {
   transition: 0ms all;
 }
 
-/* line 21, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_utilities.scss */
+/* line 28, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_utilities.scss */
 .vertically-centered {
   top: 50%;
   left: 50%;
@@ -2160,13 +2176,13 @@ p {
   position: absolute;
 }
 
-/* line 26, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_utilities.scss */
+/* line 33, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_utilities.scss */
 .vertically-centered-md {
   margin-top: 40px;
 }
 
 @media (min-width: 992px) {
-  /* line 26, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_utilities.scss */
+  /* line 33, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/config/_utilities.scss */
   .vertically-centered-md {
     top: 50%;
     left: 50%;
@@ -2179,6 +2195,11 @@ p {
   }
 }
 
+/* ====================
+
+Imports partials in the "parts" dir
+
+======================= */
 /* line 1, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_layout.scss */
 * {
   -webkit-box-sizing: border-box;
@@ -2265,12 +2286,12 @@ a:focus {
   }
 }
 
-/* line 2, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
-body {
-  position: relative;
-}
+/* ====================
 
-/* line 7, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+Global navigation stylings for collapsed hidden nav
+
+======================= */
+/* line 9, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .header-wrap {
   position: absolute;
   top: 0;
@@ -2278,7 +2299,7 @@ body {
   z-index: 3;
 }
 
-/* line 15, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 17, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .navigation {
   position: fixed;
   top: 0;
@@ -2288,7 +2309,7 @@ body {
   z-index: 4;
 }
 
-/* line 24, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 26, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .navContainer-wrap {
   -webkit-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
   -moz-transition: 300ms all cubic-bezier(0.4, 0, 0.2, 1);
@@ -2301,12 +2322,12 @@ body {
   position: relative;
 }
 
-/* line 31, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 33, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .active .navContainer-wrap {
   max-width: 285px;
 }
 
-/* line 35, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 37, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .navContainer {
   background-color: #484848;
   display: block;
@@ -2319,7 +2340,7 @@ body {
   min-height: 100%;
 }
 
-/* line 47, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 49, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .active .navContainer {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -2328,12 +2349,12 @@ body {
   transform: translateX(0);
 }
 
-/* line 55, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 57, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .navGroup:nth-of-type(1) {
   margin-top: 55px;
 }
 
-/* line 60, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 62, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .navGroup-title, .navToggle {
   text-transform: uppercase;
   letter-spacing: .07em;
@@ -2343,24 +2364,24 @@ body {
   text-align: left;
 }
 
-/* line 71, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 73, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .navGroup ul, .navLink {
   padding: 0;
   margin: 0;
 }
 
-/* line 75, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 77, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .navGroup ul {
   padding-bottom: 20px;
 }
 
-/* line 78, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 80, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .navLink.current a {
   color: rgba(255, 255, 255, 0.6);
   position: relative;
 }
 
-/* line 81, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 83, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .navLink.current a:after {
   content: '';
   height: 75%;
@@ -2377,7 +2398,7 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 93, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 95, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .navLink a {
   color: rgba(255, 255, 255, 0.3);
   font-size: .65em;
@@ -2388,13 +2409,13 @@ body {
   padding-left: 70px;
 }
 
-/* line 103, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 105, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .navLink a:hover {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(255, 255, 255, 0.02);
 }
 
-/* line 108, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 110, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .navToggle {
   -webkit-transform: rotate(-90deg) translateX(-50%);
   -moz-transform: rotate(-90deg) translateX(-50%);
@@ -2409,7 +2430,7 @@ body {
   left: 0;
 }
 
-/* line 119, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 121, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .overlayMask {
   background-color: transparent;
   -webkit-transition: 200ms background-color;
@@ -2419,7 +2440,7 @@ body {
   z-index: 1;
 }
 
-/* line 123, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
+/* line 125, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_nav.scss */
 .overlayMask.active {
   width: 100%;
   height: 100%;
@@ -2429,7 +2450,12 @@ body {
   cursor: e-resize;
 }
 
-/* line 2, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* ====================
+
+General styles and resets for buttons
+
+======================= */
+/* line 7, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn, .btn-primary, .btn-video, a.btn-video, .btn-download, a.btn-download, .btn-scroll, a.btn-scroll, .btn-submit, a.btn-primary, a.btn-submit, .btn-white, .btn-arrow-right, .btn-arrow-right-dark, a.btn-arrow-right-dark, a.btn-arrow-right, a.btn-white, .btn-dark, a.btn-dark, a.btn, a.btn-primary, a.btn-video, a.btn-download, a.btn-scroll, a.btn-submit, a.btn-white, a.btn-arrow-right, a.btn-arrow-right-dark, a.btn-dark {
   display: inline-block;
   padding: 13px 17px;
@@ -2444,18 +2470,18 @@ body {
   color: #0072CE;
 }
 
-/* line 11, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 16, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn:hover, .btn-primary:hover, .btn-video:hover, .btn-download:hover, .btn-scroll:hover, .btn-submit:hover, .btn-white:hover, .btn-arrow-right:hover, .btn-arrow-right-dark:hover, .btn-dark:hover, a.btn:hover, a.btn-primary:hover, a.btn-video:hover, a.btn-download:hover, a.btn-scroll:hover, a.btn-submit:hover, a.btn-white:hover, a.btn-arrow-right:hover, a.btn-arrow-right-dark:hover, a.btn-dark:hover {
   background-color: #00569b;
 }
 
-/* line 15, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 20, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-video, a.btn-video, .btn-download, a.btn-download, .btn-scroll, a.btn-scroll, .btn-arrow-right, .btn-arrow-right-dark, a.btn-arrow-right-dark, a.btn-arrow-right, .btn-arrow {
   position: relative;
   padding-right: 40px;
 }
 
-/* line 18, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 23, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-video:after, .btn-download:after, .btn-scroll:after, .btn-arrow-right:after, .btn-arrow-right-dark:after, .btn-arrow:after {
   content: '';
   display: block;
@@ -2473,47 +2499,47 @@ body {
   background-size: 100%;
 }
 
-/* line 31, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 36, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-primary, .btn-video, a.btn-video, .btn-download, a.btn-download, .btn-scroll, a.btn-scroll, .btn-submit, a.btn-primary, a.btn-video, a.btn-download, a.btn-scroll, a.btn-submit {
   color: white;
   background-color: #0072CE;
 }
 
-/* line 35, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 40, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .dark-bg .btn-primary, .dark-bg .btn-video, .dark-bg .btn-download, .dark-bg .btn-scroll, .dark-bg .btn-submit, .dark-bg a.btn-primary, .dark-bg a.btn-video, .dark-bg a.btn-download, .dark-bg a.btn-scroll, .dark-bg a.btn-submit {
   color: #484848;
 }
 
-/* line 39, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 44, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-white, .btn-arrow-right, .btn-arrow-right-dark, a.btn-arrow-right-dark, a.btn-arrow-right, a.btn-white, a.btn-arrow-right, a.btn-arrow-right-dark {
   background-color: white;
 }
 
-/* line 43, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 48, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-dark, a.btn-dark {
   border-color: #484848;
   background-color: #484848;
   color: white;
 }
 
-/* line 48, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 53, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-dark:hover, a.btn-dark:hover {
   border-color: black;
 }
 
-/* line 52, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 57, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-video, a.btn-video {
   position: relative;
   padding-right: 40px;
 }
 
-/* line 57, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 62, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-video:after, a.btn-video:after {
   background-image: url("../img/icon-play-circle.png");
   background-image: url("../img/icon-play-circle.svg");
 }
 
-/* line 62, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 67, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-download, a.btn-download {
   position: relative;
   padding-right: 40px;
@@ -2521,44 +2547,44 @@ body {
 }
 
 @media (min-width: 992px) {
-  /* line 62, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+  /* line 67, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
   .btn-download, a.btn-download {
     display: inline-block;
   }
 }
 
-/* line 72, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 77, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-download:after, a.btn-download:after {
   background-image: url("../img/icon-download.png");
   background-image: url("../img/icon-download.svg");
 }
 
-/* line 76, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 81, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .dark-bg .btn-download:after, .dark-bg a.btn-download:after {
   background-image: url("../img/icon-download-dark.png");
   background-image: url("../img/icon-download-dark.svg");
 }
 
-/* line 81, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 86, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-scroll, a.btn-scroll {
   position: relative;
   padding-right: 40px;
 }
 
-/* line 86, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 91, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-scroll:after, a.btn-scroll:after {
   background-position: center;
   background-image: url("../img/icon-arrow-down.png");
   background-image: url("../img/icon-arrow-down.svg");
 }
 
-/* line 93, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 98, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-arrow-right, .btn-arrow-right-dark, a.btn-arrow-right-dark, a.btn-arrow-right, a.btn-arrow-right-dark {
   position: relative;
   padding-right: 40px;
 }
 
-/* line 98, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 103, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-arrow-right:after, .btn-arrow-right-dark:after, a.btn-arrow-right:after, a.btn-arrow-right-dark:after {
   top: 55%;
   height: 15px;
@@ -2566,19 +2592,19 @@ body {
   background-image: url("../img/icon-skinnyarrow.svg");
 }
 
-/* line 105, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 110, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-arrow-right-dark, a.btn-arrow-right-dark {
   background-color: #0072CE;
   color: white;
 }
 
-/* line 109, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 114, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-arrow-right-dark:after, a.btn-arrow-right-dark:after {
   background-image: url("../img/icon-skinnyarrow-white.png");
   background-image: url("../img/icon-skinnyarrow-white.svg");
 }
 
-/* line 115, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 120, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-arrow {
   width: 50px;
   height: 50px;
@@ -2588,14 +2614,14 @@ body {
 }
 
 @media (min-width: 737px) {
-  /* line 115, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+  /* line 120, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
   .btn-arrow {
     width: 30px;
     height: 30px;
   }
 }
 
-/* line 126, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
+/* line 131, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_buttons.scss */
 .btn-arrow:after {
   width: 15px;
   height: 20px;
@@ -2613,27 +2639,32 @@ body {
   background-image: url("../img/arrow-thick-right.svg");
 }
 
-/* line 1, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+/* ====================
+
+Styles for a general overflow carousel, pairs with carousel.js real nice like
+
+======================= */
+/* line 8, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
 .carousel-wrap {
   display: inline-block;
   position: relative;
   padding: 0 80px;
 }
 
-/* line 7, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+/* line 14, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
 .carousel, .carousel li {
   margin: 0;
   padding: 0;
 }
 
-/* line 12, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+/* line 19, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
 .carousel {
   white-space: no-wrap;
   width: 100%;
   overflow-x: hidden;
 }
 
-/* line 16, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+/* line 23, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
 .carousel li {
   display: inline-block;
   margin: 0;
@@ -2641,14 +2672,14 @@ body {
   list-style: none;
 }
 
-/* line 23, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+/* line 30, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
 .carousel li span {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* line 31, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+/* line 38, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
 .cta-next, .cta-prev {
   position: absolute;
   top: 50%;
@@ -2672,12 +2703,12 @@ body {
   background-size: 100%;
 }
 
-/* line 45, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+/* line 52, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
 .cta-next:hover, .cta-prev:hover {
   background-image: url("../img/arrow-thick-right-darker.svg");
 }
 
-/* line 48, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+/* line 55, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
 .cta-next.visible, .cta-prev.visible {
   visibility: visible;
   -webkit-transform: translateX(0);
@@ -2688,19 +2719,19 @@ body {
   opacity: 1;
 }
 
-/* line 54, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+/* line 61, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
 .cta-next {
   right: 5px;
 }
 
 @media (min-width: 737px) {
-  /* line 54, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+  /* line 61, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
   .cta-next {
     right: 10px;
   }
 }
 
-/* line 59, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+/* line 66, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
 .cta-next:active {
   -webkit-transform: translateX(40%);
   -moz-transform: translateX(40%);
@@ -2709,7 +2740,7 @@ body {
   transform: translateX(40%);
 }
 
-/* line 63, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+/* line 70, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
 .cta-prev {
   left: 5px;
   -webkit-transform: translateX(100%) rotate(180deg);
@@ -2719,7 +2750,7 @@ body {
   transform: translateX(100%) rotate(180deg);
 }
 
-/* line 67, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+/* line 74, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
 .cta-prev.visible {
   -webkit-transform: translateX(0) rotate(180deg);
   -moz-transform: translateX(0) rotate(180deg);
@@ -2728,7 +2759,7 @@ body {
   transform: translateX(0) rotate(180deg);
 }
 
-/* line 69, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+/* line 76, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
 .cta-prev.visible:active {
   -webkit-transform: translateX(-40%) rotate(180deg);
   -moz-transform: translateX(-40%) rotate(180deg);
@@ -2738,8 +2769,14 @@ body {
 }
 
 @media (min-width: 737px) {
-  /* line 63, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
+  /* line 70, /Users/engebretsen/Sites/Other/jekyll-boilerplate/src/sass/parts/_carousel.scss */
   .cta-prev {
     left: 20px;
   }
 }
+
+/* ====================
+
+Imports styles for individual pages
+
+======================= */
