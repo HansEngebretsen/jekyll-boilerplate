@@ -25,7 +25,7 @@ a:focus {
     height: 100vh;
     &-md {
         height: auto;
-        @include bp(screen-md){
+        @include breakpoint(screen-md){
             height:100vh;
         }
     }
@@ -50,7 +50,7 @@ a:focus {
     // @include bp(tv-s){
     //     width: 1300px;
     // }
-    @include bp(tv-l){
+    @include breakpoint(tv-l){
         width: 1300px;
     }
 }

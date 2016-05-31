@@ -1,4 +1,9 @@
-// Button styling
+/* ====================
+
+General styles and resets for buttons
+
+======================= */
+
 .btn, a.btn {
   display: inline-block;
   padding: 13px 17px;
@@ -65,7 +70,7 @@
   position: relative;
   padding-right: 40px;
   display:none;
-  @include bp(screen-md){
+  @include breakpoint(screen-md){
     display:inline-block;;
   }
 
@@ -116,7 +121,7 @@
   @extend %icon-after;
   width:50px;
   height:50px;
-  @include bp(tablet-s){
+  @include breakpoint(tablet-s){
     width:30px;
     height:30px;
   }

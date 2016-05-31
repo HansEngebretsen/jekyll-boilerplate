@@ -1,3 +1,12 @@
+/* ====================
+
+Breakpoints Mixin
+
+Imported by global.scss, included throughout sass\
+USAGE: In any sass declaration, to include breakpont use:
+    @include bp([breakpoint name]){ }
+
+======================= */
 $breakpoints: (
 
   // Bootstrap breakpoints
@@ -29,7 +38,7 @@ $breakpoints: (
 
 );
 
-@mixin bp($name) {
+@mixin breakpoint($name) {
   // If the key exists in the map
   @if map-has-key($breakpoints, $name) {
     // Prints a media query based on the value

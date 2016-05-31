@@ -1,3 +1,10 @@
+/* ====================
+
+Styles for a general overflow carousel, pairs with carousel.js real nice like
+
+======================= */
+
+
 .carousel-wrap {
   display:inline-block;
   position:relative;
@@ -53,7 +60,7 @@
 }
 .cta-next {
   right: 5px;
-  @include bp(tablet-s) {
+  @include breakpoint(tablet-s) {
     right: 10px;
   }
   &:active {
@@ -70,7 +77,7 @@
       transform:translateX(-40%) rotate(180deg);
     }
   }
-  @include bp(tablet-s) {
+  @include breakpoint(tablet-s) {
     left: 20px;
   }
 }

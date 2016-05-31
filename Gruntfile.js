@@ -13,14 +13,14 @@ module.exports = function(grunt) {
                        'src/js/modules/*.js'
 
                    ],
-                   dest: 'htdocs/js/build/production.js',
+                   dest: '_site/js/build/production.js',
             }
           },
 
          uglify: {
             build: {
-                src: 'htdocs/js/build/production.js',
-                dest: 'htdocs/js/build/production.min.js'
+                src: '_site/js/build/production.js',
+                dest: '_site/js/build/production.min.js'
             }
           },
 
@@ -30,13 +30,13 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'src/img/',
                     src: ['*.{png,jpg,gif}'],
-                    dest: 'htdocs/img/'
+                    dest: '_site/img/'
                 }],
                 files: [{
                   expand: true,
                     cwd: 'src/img/',
                     src: ['*.{svg}'],
-                    dest: 'htdocs/_includes/'
+                    dest: '_site/_includes/'
                 }]
             }
         },
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
                      sourcemap: 'file'
                  },
                  files: {
-                     'htdocs/css/styles.css': 'src/sass/styles.scss'
+                     '_site/css/styles.css': 'src/sass/styles.scss'
                  }
              },
              prod: {
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
                    outputStyle: 'compressed'
                },
                files: {
-                   'htdocs/css/styles.min.css': 'src/sass/styles.scss'
+                   '_site/css/styles.min.css': 'src/sass/styles.scss'
                }
              }
          },
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'htdocs/css/styles.css': 'htdocs/css/styles.css'
+                    '_site/css/styles.css': '_site/css/styles.css'
                 }
             }
 
@@ -76,14 +76,14 @@ module.exports = function(grunt) {
         browserSync: {
             bsFiles: {
                 src : [
-                  'htdocs/css/*.css',
-                  'htdocs/js/*.js'
+                  '_site/css/*.css',
+                  '_site/js/*.js'
                   ]
             },
             options: {
                 watchTask: true,
                 server: {
-                    baseDir: "htdocs"
+                    baseDir: "_site"
                 }
             }
         },
