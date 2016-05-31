@@ -43,7 +43,7 @@ social-links:
 #
 
 # Sets source and desitnation directories for input/output
-destination: htdocs/
+destination: _site/
 source: src/
 
 markdown: redcarpet
