@@ -4,19 +4,28 @@ General styles and resets for buttons
 
 ======================= */
 
-.btn, a.btn {
-  display: inline-block;
-  padding: 13px 17px;
-  font-size: 0.7em;
-  font-weight: 600;
-  transition: 100ms all;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: $blue;
+%material-shadow {
+  box-shadow:0 2px 5px 0 rgba(0,0,0,.26);
   &:hover {
-    background-color: darken($blue, 10%);
+    box-shadow:0 4px 8px 0 rgba(0,0,0,.4);
   }
 }
+
+%material-hover {
+  transform: translate3d(0,0,0);
+  transition:.2s cubic-bezier(0,0,.2,1);
+  transition-property:transform,box-shadow;
+  opacity:.93;
+  @extend %material-shadow;
+  &:hover {
+    transform:translate3d(0,-1px,0);
+    opacity:1;
+  }
+  &:active {
+    transform:translate3d(0,1px,0);
+  }
+}
+
 %icon-after {
     position: relative;
     padding-right: 40px;
@@ -33,115 +42,5 @@ General styles and resets for buttons
         background-size: 100%;
     }
 }
-.btn-primary, a.btn-primary {
-  @extend .btn;
-  color: white;
-  background-color: $blue;
-  .dark-bg &{
-    color: $black;
-  }
-}
-.btn-white, a.btn-white {
-  @extend .btn;
-  background-color: $white;
-}
-.btn-dark, a.btn-dark {
-  @extend .btn;
-  border-color: $black;
-  background-color: $black;
-  color:white;
-  &:hover {
-    border-color: black;
-  }
-}
-.btn-video, a.btn-video {
-  @extend .btn-primary;
-  @extend %icon-after;
-  position: relative;
-  padding-right: 40px;
-  &:after {
-    background-image: url('../img/icon-play-circle.png');
-    background-image: url('../img/icon-play-circle.svg');
-  }
-}
-.btn-download, a.btn-download {
-  @extend .btn-primary;
-  @extend %icon-after;
-  position: relative;
-  padding-right: 40px;
-  display:none;
-  @include breakpoint(screen-md){
-    display:inline-block;;
-  }
 
-  &:after {
-    background-image: url('../img/icon-download.png');
-    background-image: url('../img/icon-download.svg');
-  }
-  .dark-bg &:after {
-    background-image: url('../img/icon-download-dark.png');
-    background-image: url('../img/icon-download-dark.svg');
-  }
-}
-.btn-scroll, a.btn-scroll {
-  @extend .btn-primary;
-  @extend %icon-after;
-  position: relative;
-  padding-right: 40px;
-  &:after {
-    background-position:center;
-    background-image: url('../img/icon-arrow-down.png');
-    background-image: url('../img/icon-arrow-down.svg');
-  }
-}
-
-.btn-arrow-right, a.btn-arrow-right {
-  @extend .btn-white;
-  @extend %icon-after;
-  position: relative;
-  padding-right: 40px;
-  &:after {
-    top: 55%;
-    height: 15px;
-    background-image: url('../img/icon-skinnyarrow.png');
-    background-image: url('../img/icon-skinnyarrow.svg');
-  }
-}
-.btn-arrow-right-dark, a.btn-arrow-right-dark {
-  @extend .btn-arrow-right;
-  background-color:$blue;
-  color:white;
-  &:after {
-    background-image: url('../img/icon-skinnyarrow-white.png');
-    background-image: url('../img/icon-skinnyarrow-white.svg');
-  }
-}
-
-.btn-arrow {
-  @extend %icon-after;
-  width:50px;
-  height:50px;
-  @include breakpoint(tablet-s){
-    width:30px;
-    height:30px;
-  }
-  display:block;
-  background-color:rgba($blue, .6);
-  text-align:center;
-  &:after {
-    width: 15px;
-    height:20px;
-    display:inline-block;
-    right:auto;
-    left:50%;
-    transform:translate(-50%, -50%);
-    background-size:100%;
-    background-position:center center;
-    background-image: url('../img/arrow-thick-right.png');
-    background-image: url('../img/arrow-thick-right.svg');
-  }
-}
-
-.btn-submit {
-  @extend .btn-primary;
 }

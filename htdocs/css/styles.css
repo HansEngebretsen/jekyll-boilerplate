@@ -1,0 +1,3594 @@
+/* ====================
+
+Imports for any vendor generated sass.
+
+======================= */
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 11, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 29, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 42, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+/* line 53, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 68, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+/* line 79, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+/* line 91, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 103, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 111, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+/* line 126, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 131, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 136, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 141, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 146, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 151, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+/* line 160, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+/* line 168, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 173, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 181, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+/* line 189, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+/* line 198, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 207, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 220, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+/* line 230, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+/* line 238, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 248, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 256, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 264, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 268, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+/* line 280, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 287, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+/* line 295, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+/* line 305, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+/* line 320, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 329, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+/* line 341, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+/* line 353, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 361, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+/* line 373, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+/* line 387, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 402, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 417, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 430, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 442, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 456, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 468, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+/* line 477, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 488, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 501, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 14, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_clearfix.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 19, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_clearfix.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 12, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_utilities.scss */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 16, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_utilities.scss */
+.pull-right {
+  float: right !important;
+}
+
+/* line 28, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_utilities.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 32, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_utilities.scss */
+.show {
+  display: block !important;
+}
+
+/* line 36, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_utilities.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_utilities.scss */
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 48, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_utilities.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* line 56, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_utilities.scss */
+.affix {
+  position: fixed;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+/* line 17, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+.visible-xs, .visible-sm, .visible-md, .visible-lg {
+  display: none !important;
+}
+
+/* line 31, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  /* line 7, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  .visible-xs {
+    display: block !important;
+  }
+  /* line 10, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  table.visible-xs {
+    display: table;
+  }
+  /* line 11, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  tr.visible-xs {
+    display: table-row !important;
+  }
+  /* line 12, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 49, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-xs-block {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 54, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-xs-inline {
+    display: inline !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 59, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 7, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  .visible-sm {
+    display: block !important;
+  }
+  /* line 10, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  table.visible-sm {
+    display: table;
+  }
+  /* line 11, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  tr.visible-sm {
+    display: table-row !important;
+  }
+  /* line 12, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 68, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-sm-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 73, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-sm-inline {
+    display: inline !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 78, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-sm-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 7, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  .visible-md {
+    display: block !important;
+  }
+  /* line 10, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  table.visible-md {
+    display: table;
+  }
+  /* line 11, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  tr.visible-md {
+    display: table-row !important;
+  }
+  /* line 12, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 87, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-md-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 92, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-md-inline {
+    display: inline !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 97, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-md-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 7, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  .visible-lg {
+    display: block !important;
+  }
+  /* line 10, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  table.visible-lg {
+    display: table;
+  }
+  /* line 11, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  tr.visible-lg {
+    display: table-row !important;
+  }
+  /* line 12, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 106, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-lg-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 111, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-lg-inline {
+    display: inline !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 116, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 17, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 17, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 17, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 17, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  .hidden-lg {
+    display: none !important;
+  }
+}
+
+/* line 17, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+.visible-print {
+  display: none !important;
+}
+
+@media print {
+  /* line 7, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  .visible-print {
+    display: block !important;
+  }
+  /* line 10, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  table.visible-print {
+    display: table;
+  }
+  /* line 11, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  tr.visible-print {
+    display: table-row !important;
+  }
+  /* line 12, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important;
+  }
+}
+
+/* line 150, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+.visible-print-block {
+  display: none !important;
+}
+
+@media print {
+  /* line 150, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-print-block {
+    display: block !important;
+  }
+}
+
+/* line 157, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+.visible-print-inline {
+  display: none !important;
+}
+
+@media print {
+  /* line 157, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-print-inline {
+    display: inline !important;
+  }
+}
+
+/* line 164, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+.visible-print-inline-block {
+  display: none !important;
+}
+
+@media print {
+  /* line 164, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_responsive-utilities.scss */
+  .visible-print-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media print {
+  /* line 17, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_responsive-visibility.scss */
+  .hidden-print {
+    display: none !important;
+  }
+}
+
+/* line 9, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_grid.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 14, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_clearfix.scss */
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+
+/* line 19, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_clearfix.scss */
+.container:after {
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  /* line 9, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_grid.scss */
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 9, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_grid.scss */
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 9, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_grid.scss */
+  .container {
+    width: 1170px;
+  }
+}
+
+/* line 27, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_grid.scss */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 14, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_clearfix.scss */
+.container-fluid:before, .container-fluid:after {
+  content: " ";
+  display: table;
+}
+
+/* line 19, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_clearfix.scss */
+.container-fluid:after {
+  clear: both;
+}
+
+/* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_grid.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+}
+
+/* line 14, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_clearfix.scss */
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 19, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_clearfix.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 11, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-1, .col-sm-1, .col-md-1, .col-mdl-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-mdl-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-mdl-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-mdl-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-mdl-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-mdl-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-mdl-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-mdl-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-mdl-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-mdl-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-mdl-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-mdl-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+
+/* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-1 {
+  width: 8.3333333333%;
+}
+
+/* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-2 {
+  width: 16.6666666667%;
+}
+
+/* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-3 {
+  width: 25%;
+}
+
+/* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-4 {
+  width: 33.3333333333%;
+}
+
+/* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-5 {
+  width: 41.6666666667%;
+}
+
+/* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-6 {
+  width: 50%;
+}
+
+/* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-7 {
+  width: 58.3333333333%;
+}
+
+/* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-8 {
+  width: 66.6666666667%;
+}
+
+/* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-9 {
+  width: 75%;
+}
+
+/* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-10 {
+  width: 83.3333333333%;
+}
+
+/* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-11 {
+  width: 91.6666666667%;
+}
+
+/* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-12 {
+  width: 100%;
+}
+
+/* line 55, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-0 {
+  right: auto;
+}
+
+/* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-1 {
+  right: 8.3333333333%;
+}
+
+/* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-2 {
+  right: 16.6666666667%;
+}
+
+/* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-3 {
+  right: 25%;
+}
+
+/* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-4 {
+  right: 33.3333333333%;
+}
+
+/* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-5 {
+  right: 41.6666666667%;
+}
+
+/* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-6 {
+  right: 50%;
+}
+
+/* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-7 {
+  right: 58.3333333333%;
+}
+
+/* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-8 {
+  right: 66.6666666667%;
+}
+
+/* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-9 {
+  right: 75%;
+}
+
+/* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-10 {
+  right: 83.3333333333%;
+}
+
+/* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-11 {
+  right: 91.6666666667%;
+}
+
+/* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-pull-12 {
+  right: 100%;
+}
+
+/* line 45, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-0 {
+  left: auto;
+}
+
+/* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-1 {
+  left: 8.3333333333%;
+}
+
+/* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-2 {
+  left: 16.6666666667%;
+}
+
+/* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-3 {
+  left: 25%;
+}
+
+/* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-4 {
+  left: 33.3333333333%;
+}
+
+/* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-5 {
+  left: 41.6666666667%;
+}
+
+/* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-6 {
+  left: 50%;
+}
+
+/* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-7 {
+  left: 58.3333333333%;
+}
+
+/* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-8 {
+  left: 66.6666666667%;
+}
+
+/* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-9 {
+  left: 75%;
+}
+
+/* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-10 {
+  left: 83.3333333333%;
+}
+
+/* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-11 {
+  left: 91.6666666667%;
+}
+
+/* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-push-12 {
+  left: 100%;
+}
+
+/* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+
+/* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-1 {
+  margin-left: 8.3333333333%;
+}
+
+/* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-2 {
+  margin-left: 16.6666666667%;
+}
+
+/* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-4 {
+  margin-left: 33.3333333333%;
+}
+
+/* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-5 {
+  margin-left: 41.6666666667%;
+}
+
+/* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-7 {
+  margin-left: 58.3333333333%;
+}
+
+/* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-8 {
+  margin-left: 66.6666666667%;
+}
+
+/* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-10 {
+  margin-left: 83.3333333333%;
+}
+
+/* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-11 {
+  margin-left: 91.6666666667%;
+}
+
+/* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 27, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-1 {
+    width: 8.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-2 {
+    width: 16.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-3 {
+    width: 25%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-4 {
+    width: 33.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-5 {
+    width: 41.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-6 {
+    width: 50%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-7 {
+    width: 58.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-8 {
+    width: 66.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-9 {
+    width: 75%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-10 {
+    width: 83.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-11 {
+    width: 91.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-12 {
+    width: 100%;
+  }
+  /* line 55, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-0 {
+    right: auto;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-1 {
+    right: 8.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-2 {
+    right: 16.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-4 {
+    right: 33.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-5 {
+    right: 41.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-7 {
+    right: 58.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-8 {
+    right: 66.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-10 {
+    right: 83.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-11 {
+    right: 91.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+  /* line 45, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-0 {
+    left: auto;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-1 {
+    left: 8.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-2 {
+    left: 16.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-3 {
+    left: 25%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-4 {
+    left: 33.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-5 {
+    left: 41.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-6 {
+    left: 50%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-7 {
+    left: 58.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-8 {
+    left: 66.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-9 {
+    left: 75%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-10 {
+    left: 83.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-11 {
+    left: 91.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-push-12 {
+    left: 100%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 27, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-1 {
+    width: 8.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-2 {
+    width: 16.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-3 {
+    width: 25%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-4 {
+    width: 33.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-5 {
+    width: 41.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-6 {
+    width: 50%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-7 {
+    width: 58.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-8 {
+    width: 66.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-9 {
+    width: 75%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-10 {
+    width: 83.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-11 {
+    width: 91.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-12 {
+    width: 100%;
+  }
+  /* line 55, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-0 {
+    right: auto;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-1 {
+    right: 8.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-2 {
+    right: 16.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-3 {
+    right: 25%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-4 {
+    right: 33.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-5 {
+    right: 41.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-6 {
+    right: 50%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-7 {
+    right: 58.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-8 {
+    right: 66.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-9 {
+    right: 75%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-10 {
+    right: 83.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-11 {
+    right: 91.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-pull-12 {
+    right: 100%;
+  }
+  /* line 45, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-0 {
+    left: auto;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-1 {
+    left: 8.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-2 {
+    left: 16.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-3 {
+    left: 25%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-4 {
+    left: 33.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-5 {
+    left: 41.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-6 {
+    left: 50%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-7 {
+    left: 58.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-8 {
+    left: 66.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-9 {
+    left: 75%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-10 {
+    left: 83.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-11 {
+    left: 91.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-push-12 {
+    left: 100%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 27, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-1, .col-mdl-2, .col-mdl-3, .col-mdl-4, .col-mdl-5, .col-mdl-6, .col-mdl-7, .col-mdl-8, .col-mdl-9, .col-mdl-10, .col-mdl-11, .col-mdl-12 {
+    float: left;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-1 {
+    width: 8.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-2 {
+    width: 16.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-3 {
+    width: 25%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-4 {
+    width: 33.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-5 {
+    width: 41.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-6 {
+    width: 50%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-7 {
+    width: 58.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-8 {
+    width: 66.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-9 {
+    width: 75%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-10 {
+    width: 83.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-11 {
+    width: 91.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-12 {
+    width: 100%;
+  }
+  /* line 55, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-pull-0 {
+    right: auto;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-pull-1 {
+    right: 8.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-pull-2 {
+    right: 16.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-pull-3 {
+    right: 25%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-pull-4 {
+    right: 33.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-pull-5 {
+    right: 41.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-pull-6 {
+    right: 50%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-pull-7 {
+    right: 58.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-pull-8 {
+    right: 66.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-pull-9 {
+    right: 75%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-pull-10 {
+    right: 83.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-pull-11 {
+    right: 91.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-pull-12 {
+    right: 100%;
+  }
+  /* line 45, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-push-0 {
+    left: auto;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-push-1 {
+    left: 8.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-push-2 {
+    left: 16.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-push-3 {
+    left: 25%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-push-4 {
+    left: 33.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-push-5 {
+    left: 41.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-push-6 {
+    left: 50%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-push-7 {
+    left: 58.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-push-8 {
+    left: 66.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-push-9 {
+    left: 75%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-push-10 {
+    left: 83.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-push-11 {
+    left: 91.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-push-12 {
+    left: 100%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-offset-0 {
+    margin-left: 0%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-mdl-offset-12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 27, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-1 {
+    width: 8.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-2 {
+    width: 16.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-3 {
+    width: 25%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-4 {
+    width: 33.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-5 {
+    width: 41.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-6 {
+    width: 50%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-7 {
+    width: 58.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-8 {
+    width: 66.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-9 {
+    width: 75%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-10 {
+    width: 83.3333333333%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-11 {
+    width: 91.6666666667%;
+  }
+  /* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-12 {
+    width: 100%;
+  }
+  /* line 55, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-0 {
+    right: auto;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-1 {
+    right: 8.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-2 {
+    right: 16.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-4 {
+    right: 33.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-5 {
+    right: 41.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-7 {
+    right: 58.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-8 {
+    right: 66.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-10 {
+    right: 83.3333333333%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-11 {
+    right: 91.6666666667%;
+  }
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+  /* line 45, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-0 {
+    left: auto;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-1 {
+    left: 8.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-2 {
+    left: 16.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-3 {
+    left: 25%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-4 {
+    left: 33.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-5 {
+    left: 41.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-6 {
+    left: 50%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-7 {
+    left: 58.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-8 {
+    left: 66.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-9 {
+    left: 75%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-10 {
+    left: 83.3333333333%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-11 {
+    left: 91.6666666667%;
+  }
+  /* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-push-12 {
+    left: 100%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+  /* line 60, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/mixins/_grid-framework.scss */
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+}
+
+/* line 85, /Users/engebretsen/Sites/site.vivomove/src/sass/vendor/bootstrap/_grid.scss */
+body .col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+/* ====================
+
+Imports for config elements
+
+======================= */
+/*
+  Global Color Variables
+*/
+/* ====================
+
+Breakpoints Mixin
+
+Imported by global.scss, included throughout sassUSAGE: In any sass declaration, to include breakpont use:
+    @include bp([breakpoint name]){ }
+
+======================= */
+/* ====================
+
+Global typographic styles and resets
+
+======================= */
+/* line 7, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_typography.scss */
+h1, h2, h3, h4 {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 12, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_typography.scss */
+.share-cta, .download-cta, .vivomove-logo-wrap, .download-opts li a {
+  font-family: 'Knockout-HTF32-JuniorCruiserwt', 'Knockout', 'Open Sans', sans-serif;
+  font-weight: 100;
+}
+
+/* line 16, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_typography.scss */
+h2, h1, .prod-info-wrap p {
+  font-family: "bodoni-urw", 'Bodoni MT', Didot, 'Didot LT STD',sans-serif;
+}
+
+/* line 27, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_typography.scss */
+.bigtitle {
+  font-size: 10em;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: .9em;
+}
+
+/* line 33, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_typography.scss */
+html {
+  font-size: 18px;
+  color: white;
+}
+
+/* line 37, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_typography.scss */
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+/* line 42, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_typography.scss */
+h1, h2 {
+  margin: 0.4em 0;
+  font-weight: 700;
+  color: white;
+}
+
+/* line 53, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_typography.scss */
+h1 {
+  font-size: 1em;
+}
+
+/* line 57, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_typography.scss */
+h2 {
+  font-size: 0.75em;
+  color: rgba(136, 136, 136, 0.5);
+}
+
+/* line 62, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_typography.scss */
+p {
+  color: #ACAFB5;
+  font-size: .75em;
+  line-height: 1.4;
+}
+
+/* line 68, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_typography.scss */
+.text-center {
+  text-align: center;
+}
+
+/* ====================
+
+Global utilites generally used for styles and used in extends
+
+======================= */
+/* line 12, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_utilities.scss */
+.dark-bg {
+  background-color: #484848;
+}
+
+/* line 15, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_utilities.scss */
+.inline {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+/* line 20, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_utilities.scss */
+.inview {
+  opacity: 1;
+  -webkit-transition: 1700ms all;
+  -moz-transition: 1700ms all;
+  -o-transition: 1700ms all;
+  transition: 1700ms all;
+}
+
+/* line 24, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_utilities.scss */
+.opaque {
+  opacity: 0;
+  -webkit-transition: 0ms all;
+  -moz-transition: 0ms all;
+  -o-transition: 0ms all;
+  transition: 0ms all;
+}
+
+/* line 28, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_utilities.scss */
+.vertically-centered {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+}
+
+/* line 33, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_utilities.scss */
+.vertically-centered-md {
+  margin-top: 40px;
+}
+
+@media (min-width: 992px) {
+  /* line 33, /Users/engebretsen/Sites/site.vivomove/src/sass/config/_utilities.scss */
+  .vertically-centered-md {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+  }
+}
+
+/* ====================
+
+Imports partials in the "parts" dir
+
+======================= */
+/* line 1, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 4, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 10, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* line 13, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+.container.ptop {
+  padding-top: 10vh;
+}
+
+/* line 16, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+a:focus {
+  outline: 0;
+}
+
+/* line 19, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 25, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+.h100 {
+  height: 100vh;
+}
+
+/* line 27, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+.h100-md {
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  /* line 27, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+  .h100-md {
+    height: 100vh;
+  }
+}
+
+/* line 34, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+.h50 {
+  height: 50vh;
+}
+
+/* line 37, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+.pl-40 {
+  padding-left: 40px;
+}
+
+/* line 40, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+.pr-40 {
+  padding-right: 40px;
+}
+
+/* line 43, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+.centered {
+  margin: 0 auto;
+  float: none;
+}
+
+/* line 47, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+.mbot-80 {
+  margin-bottom: 80px;
+}
+
+@media (min-width: 1824px) {
+  /* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_layout.scss */
+  .container {
+    width: 1300px;
+  }
+}
+
+/* ====================
+
+General styles and resets for buttons
+
+======================= */
+/* line 7, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-svg-wrap .btn-svg,
+a.btn-svg-wrap .btn-svg, .btn-pluss {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+/* line 9, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-svg-wrap .btn-svg:hover, .btn-pluss:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* line 14, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-svg-wrap .btn-svg,
+a.btn-svg-wrap .btn-svg {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
+  -moz-transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
+  -o-transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
+  transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition-property: -webkit-transform,-webkit-box-shadow;
+  -moz-transition-property: -moz-transform,box-shadow;
+  -o-transition-property: -o-transform,box-shadow;
+  transition-property: transform,box-shadow;
+  opacity: .93;
+}
+
+/* line 20, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-svg-wrap .btn-svg:hover {
+  -webkit-transform: translate3d(0, -1px, 0);
+  -moz-transform: translate3d(0, -1px, 0);
+  -ms-transform: translate3d(0, -1px, 0);
+  -o-transform: translate3d(0, -1px, 0);
+  transform: translate3d(0, -1px, 0);
+  opacity: 1;
+}
+
+/* line 24, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-svg-wrap .btn-svg:active {
+  -webkit-transform: translate3d(0, 1px, 0);
+  -moz-transform: translate3d(0, 1px, 0);
+  -ms-transform: translate3d(0, 1px, 0);
+  -o-transform: translate3d(0, 1px, 0);
+  transform: translate3d(0, 1px, 0);
+}
+
+/* line 29, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-video, a.btn-video, .btn-download, a.btn-download, .btn-scroll, a.btn-scroll, .btn-arrow-right, .btn-arrow-right-dark, a.btn-arrow-right-dark, a.btn-arrow-right, .btn-arrow {
+  position: relative;
+  padding-right: 40px;
+}
+
+/* line 32, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-video:after, .btn-download:after, .btn-scroll:after, .btn-arrow-right:after, .btn-arrow-right-dark:after, .btn-arrow:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* line 46, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn, .btn-primary, .btn-video, a.btn-video, .btn-download, a.btn-download, .btn-scroll, a.btn-scroll, .btn-submit, a.btn-primary, a.btn-submit, .btn-white, .btn-arrow-right, .btn-arrow-right-dark, a.btn-arrow-right-dark, a.btn-arrow-right, a.btn-white, .btn-dark, a.btn-dark, a.btn, a.btn-primary, a.btn-video, a.btn-download, a.btn-scroll, a.btn-submit, a.btn-white, a.btn-arrow-right, a.btn-arrow-right-dark, a.btn-dark {
+  display: inline-block;
+  padding: 13px 27px;
+  font-weight: 600;
+  -webkit-transition: 100ms all;
+  -moz-transition: 100ms all;
+  -o-transition: 100ms all;
+  transition: 100ms all;
+  color: black;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+/* line 53, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn:hover, .btn-primary:hover, .btn-video:hover, .btn-download:hover, .btn-scroll:hover, .btn-submit:hover, .btn-white:hover, .btn-arrow-right:hover, .btn-arrow-right-dark:hover, .btn-dark:hover, a.btn:hover, a.btn-primary:hover, a.btn-video:hover, a.btn-download:hover, a.btn-scroll:hover, a.btn-submit:hover, a.btn-white:hover, a.btn-arrow-right:hover, a.btn-arrow-right-dark:hover, a.btn-dark:hover {
+  background-color: #00569b;
+}
+
+/* line 57, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-svg-wrap,
+a.btn-svg-wrap {
+  display: inline-block;
+  max-width: 65%;
+  background: none;
+  padding: 0;
+  height: auto;
+  width: auto;
+  line-height: 0;
+}
+
+/* line 66, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-svg-wrap .btn-svg,
+a.btn-svg-wrap .btn-svg {
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  height: 50px;
+  max-width: 100%;
+}
+
+/* line 71, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-svg-wrap .btn-svg .btn-svg-rectangle,
+a.btn-svg-wrap .btn-svg .btn-svg-rectangle {
+  fill: #fff;
+}
+
+/* line 74, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-svg-wrap .btn-svg .btn-svg-text,
+a.btn-svg-wrap .btn-svg .btn-svg-text {
+  font-size: .45em;
+  line-height: 1;
+  font-weight: 900;
+}
+
+/* line 82, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-pluss {
+  display: inline-block;
+  tranform: trnaslate3d(0, 0, 0);
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  font-size: .75em;
+  width: 40px;
+  height: 40px;
+  line-height: 0;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: 150ms all;
+  -moz-transition: 150ms all;
+  -o-transition: 150ms all;
+  transition: 150ms all;
+  text-indent: -9999px;
+  z-index: 100;
+  bottom: -60px;
+  line-height: 1;
+  background-image: url("../img/icon-plus-fill.svg");
+  background-size: 100%;
+}
+
+/* line 103, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-svg-wrap, #button {
+  height: 50px;
+  line-height: 0;
+}
+
+/* line 108, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-arrowdown {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 70px;
+  height: 36px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  background-size: 100%;
+  background-image: url("../img/icon-arrowdown.svg");
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -o-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  -webkit-transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
+  -moz-transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
+  -o-transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
+  transition: 0.2s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  opacity: .83;
+}
+
+/* line 123, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-arrowdown:hover {
+  -webkit-transform: translate3d(-50%, 1px, 0);
+  -moz-transform: translate3d(-50%, 1px, 0);
+  -ms-transform: translate3d(-50%, 1px, 0);
+  -o-transform: translate3d(-50%, 1px, 0);
+  transform: translate3d(-50%, 1px, 0);
+  opacity: 1;
+}
+
+/* line 127, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-arrowdown:hover {
+  -webkit-transform: translate3d(-50%, 2px, 0);
+  -moz-transform: translate3d(-50%, 2px, 0);
+  -ms-transform: translate3d(-50%, 2px, 0);
+  -o-transform: translate3d(-50%, 2px, 0);
+  transform: translate3d(-50%, 2px, 0);
+}
+
+/* line 132, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-primary, .btn-video, a.btn-video, .btn-download, a.btn-download, .btn-scroll, a.btn-scroll, .btn-submit, a.btn-primary, a.btn-video, a.btn-download, a.btn-scroll, a.btn-submit {
+  color: white;
+  background-color: #0072CE;
+}
+
+/* line 136, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.dark-bg .btn-primary, .dark-bg .btn-video, .dark-bg .btn-download, .dark-bg .btn-scroll, .dark-bg .btn-submit, .dark-bg a.btn-primary, .dark-bg a.btn-video, .dark-bg a.btn-download, .dark-bg a.btn-scroll, .dark-bg a.btn-submit {
+  color: #484848;
+}
+
+/* line 140, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-white, .btn-arrow-right, .btn-arrow-right-dark, a.btn-arrow-right-dark, a.btn-arrow-right, a.btn-white, a.btn-arrow-right, a.btn-arrow-right-dark {
+  background-color: white;
+}
+
+/* line 143, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-white:hover, .btn-arrow-right:hover, .btn-arrow-right-dark:hover, a.btn-white:hover, a.btn-arrow-right:hover, a.btn-arrow-right-dark:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 147, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-dark, a.btn-dark {
+  border-color: #484848;
+  background-color: #484848;
+  color: white;
+}
+
+/* line 152, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-dark:hover, a.btn-dark:hover {
+  border-color: black;
+}
+
+/* line 156, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-video, a.btn-video {
+  position: relative;
+  padding-right: 40px;
+}
+
+/* line 161, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-video:after, a.btn-video:after {
+  background-image: url("../img/icon-play-circle.png");
+  background-image: url("../img/icon-play-circle.svg");
+}
+
+/* line 166, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-download, a.btn-download {
+  position: relative;
+  padding-right: 40px;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  /* line 166, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+  .btn-download, a.btn-download {
+    display: inline-block;
+  }
+}
+
+/* line 176, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-download:after, a.btn-download:after {
+  background-image: url("../img/icon-download.png");
+  background-image: url("../img/icon-download.svg");
+}
+
+/* line 180, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.dark-bg .btn-download:after, .dark-bg a.btn-download:after {
+  background-image: url("../img/icon-download-dark.png");
+  background-image: url("../img/icon-download-dark.svg");
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-scroll, a.btn-scroll {
+  position: relative;
+  padding-right: 40px;
+}
+
+/* line 190, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-scroll:after, a.btn-scroll:after {
+  background-position: center;
+  background-image: url("../img/icon-arrow-down.png");
+  background-image: url("../img/icon-arrow-down.svg");
+}
+
+/* line 197, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-arrow-right, .btn-arrow-right-dark, a.btn-arrow-right-dark, a.btn-arrow-right, a.btn-arrow-right-dark {
+  position: relative;
+  padding-right: 40px;
+}
+
+/* line 202, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-arrow-right:after, .btn-arrow-right-dark:after, a.btn-arrow-right:after, a.btn-arrow-right-dark:after {
+  top: 55%;
+  height: 15px;
+  background-image: url("../img/icon-skinnyarrow.png");
+  background-image: url("../img/icon-skinnyarrow.svg");
+}
+
+/* line 209, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-arrow-right-dark, a.btn-arrow-right-dark {
+  background-color: #0072CE;
+  color: white;
+}
+
+/* line 213, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-arrow-right-dark:after, a.btn-arrow-right-dark:after {
+  background-image: url("../img/icon-skinnyarrow-white.png");
+  background-image: url("../img/icon-skinnyarrow-white.svg");
+}
+
+/* line 219, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-arrow {
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: rgba(0, 114, 206, 0.6);
+  text-align: center;
+}
+
+@media (min-width: 737px) {
+  /* line 219, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+  .btn-arrow {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* line 230, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.btn-arrow:after {
+  width: 15px;
+  height: 20px;
+  display: inline-block;
+  right: auto;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-size: 100%;
+  background-position: center center;
+  background-image: url("../img/arrow-thick-right.png");
+  background-image: url("../img/arrow-thick-right.svg");
+}
+
+/* line 247, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.share-cta {
+  text-transform: lowercase;
+  padding-right: 35px;
+  line-height: 1.5;
+  position: relative;
+  text-indent: -9999px;
+  color: rgba(255, 255, 255, 0);
+  font-size: .75em;
+  -webkit-transition: 400ms color, 0s 400ms text-indent;
+  -moz-transition: 400ms color, 0s 400ms text-indent;
+  -o-transition: 400ms color, 0s 400ms text-indent;
+  transition: 400ms color, 0s 400ms text-indent;
+}
+
+/* line 257, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.share-cta:hover, .active .share-cta {
+  -webkit-transition: 400ms color;
+  -moz-transition: 400ms color;
+  -o-transition: 400ms color;
+  transition: 400ms color;
+  text-indent: 0;
+  opacity: 1;
+  color: white;
+}
+
+/* line 263, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.share-cta:after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 20px;
+  background-image: url("../img/icon-share.svg");
+  background-size: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 276, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.download-cta {
+  position: relative;
+  text-transform: lowercase;
+  padding-right: 35px;
+  line-height: 1.5;
+  text-indent: -9999px;
+  color: rgba(255, 255, 255, 0);
+  font-size: .75em;
+  -webkit-transition: 400ms color, 0s 400ms text-indent;
+  -moz-transition: 400ms color, 0s 400ms text-indent;
+  -o-transition: 400ms color, 0s 400ms text-indent;
+  transition: 400ms color, 0s 400ms text-indent;
+}
+
+/* line 286, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.download-cta:hover, .active .download-cta {
+  -webkit-transition: 400ms color;
+  -moz-transition: 400ms color;
+  -o-transition: 400ms color;
+  transition: 400ms color;
+  text-indent: 0;
+  opacity: 1;
+  color: white;
+}
+
+/* line 292, /Users/engebretsen/Sites/site.vivomove/src/sass/parts/_buttons.scss */
+.download-cta:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 23px;
+  background-image: url("../img/icon-download.svg");
+  background-size: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* ====================
+
+Imports styles for individual pages
+
+======================= */
+/* line 1, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 9, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.device-wrap, .pattern-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* line 19, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.pattern-container, .device-container {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 29, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.device-container {
+  width: auto;
+  height: auto;
+  width: 195px;
+  -webkit-transform: translateY(-46%) translateX(-50%);
+  -moz-transform: translateY(-46%) translateX(-50%);
+  -ms-transform: translateY(-46%) translateX(-50%);
+  -o-transform: translateY(-46%) translateX(-50%);
+  transform: translateY(-46%) translateX(-50%);
+  left: 15%;
+  top: 50%;
+  z-index: 4;
+}
+
+@media (min-width: 860px) {
+  /* line 29, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+  .device-container {
+    left: 35%;
+    width: 275px;
+    top: 50%;
+    -webkit-transform: translateY(-46%) translateX(-50%);
+    -moz-transform: translateY(-46%) translateX(-50%);
+    -ms-transform: translateY(-46%) translateX(-50%);
+    -o-transform: translateY(-46%) translateX(-50%);
+    transform: translateY(-46%) translateX(-50%);
+    max-height: inherit;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 29, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+  .device-container {
+    width: 275px;
+  }
+}
+
+/* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.pattern-container {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  background-size: cover;
+  pointer-events: none;
+}
+
+/* line 55, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.pattern-wrap {
+  z-index: 0;
+}
+
+/* line 57, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.pattern-wrap .pattern-container {
+  z-index: 0;
+}
+
+/* line 62, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.prod-info .device-side {
+  background-size: 100%;
+  position: absolute;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  width: 59%;
+  padding-top: 64.5%;
+  top: 25%;
+  left: 57%;
+}
+
+@media (min-width: 480px) {
+  /* line 62, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+  .prod-info .device-side {
+    width: 34%;
+    left: 59%;
+    top: 45%;
+    padding-top: 37%;
+    width: 39%;
+    padding-top: 42.5%;
+  }
+}
+
+@media (min-width: 1023px) {
+  /* line 62, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+  .prod-info .device-side {
+    width: 30%;
+    padding-top: 32.75%;
+    top: 23%;
+    left: 59%;
+  }
+}
+
+/* line 91, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-container {
+  height: 100vh;
+  -webkit-transition: 400ms all ease-in-out;
+  -moz-transition: 400ms all ease-in-out;
+  -o-transition: 400ms all ease-in-out;
+  transition: 400ms all ease-in-out;
+  position: relative;
+  width: 100%;
+}
+
+/* line 96, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-container.active {
+  margin-top: 0;
+  position: fixed;
+  pointer-events: all;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+/* line 97, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-wrap.active .section-container.active .section-title {
+  pointer-events: none;
+}
+
+/* line 106, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-container.active .prod-info {
+  pointer-events: all;
+}
+
+/* line 111, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.prod-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* line 120, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.prod-saying {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 126, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+#prodinfoWrap {
+  height: 100%;
+}
+
+/* line 129, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.prod-info-wrap {
+  padding: 0 40px;
+  padding-top: 70px;
+  letter-spacing: -.04em;
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+  max-width: 100%;
+}
+
+/* line 137, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.prod-info-wrap .bigtitle, .prod-info-wrap .description, .prod-info-wrap .device-side {
+  -webkit-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.42, 1.31);
+  -moz-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.42, 1.31);
+  -o-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.42, 1.31);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.42, 1.31);
+}
+
+/* line 140, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.prod-info-wrap .device-side {
+  -webkit-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.42, 1.31);
+  -moz-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.42, 1.31);
+  -o-transition: all 0.2s cubic-bezier(0.175, 0.885, 0.42, 1.31);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.42, 1.31);
+}
+
+/* line 143, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.prod-info-wrap .bigtitle {
+  margin: 0;
+}
+
+/* line 146, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.prod-info-wrap p {
+  color: white;
+  font-size: 1em;
+  width: 55%;
+  max-width: 100%;
+}
+
+@media (min-width: 480px) {
+  /* line 146, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+  .prod-info-wrap p {
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width: 737px) {
+  /* line 146, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+  .prod-info-wrap p {
+    font-size: 1.75em;
+    line-height: 1.24;
+    margin-top: .5em;
+  }
+}
+
+/* line 163, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.pattern-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 168, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.prod-saying {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+Mixins for Watch images and background images
+
+Watch image files must be named according tot he convention below.
+*/
+/* line 196, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.device-side.premiumGold-side {
+  background-image: url("../img/watches/watch-premiumGold-side.png");
+}
+
+/* line 196, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.device-side.sportWhite-side {
+  background-image: url("../img/watches/watch-sportWhite-side.png");
+}
+
+/* line 196, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.device-side.classicBlack-side {
+  background-image: url("../img/watches/watch-classicBlack-side.png");
+}
+
+/* line 196, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.device-side.classicWhite-side {
+  background-image: url("../img/watches/watch-classicWhite-side.png");
+}
+
+/* line 196, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.device-side.premiumSilver-side {
+  background-image: url("../img/watches/watch-premiumSilver-side.png");
+}
+
+/* line 196, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.device-side.sportBlack-side {
+  background-image: url("../img/watches/watch-sportBlack-side.png");
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-1 .pattern-container {
+  background-image: url("../img/patterns/bg-1.jpg");
+  z-index: 1;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-2 .pattern-container {
+  background-image: url("../img/patterns/bg-2.jpg");
+  z-index: 2;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-3 .pattern-container {
+  background-image: url("../img/patterns/bg-3.jpg");
+  z-index: 3;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-4 .pattern-container {
+  background-image: url("../img/patterns/bg-4.jpg");
+  z-index: 4;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-5 .pattern-container {
+  background-image: url("../img/patterns/bg-5.jpg");
+  z-index: 5;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-6 .pattern-container {
+  background-image: url("../img/patterns/bg-6.jpg");
+  z-index: 6;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-7 .pattern-container {
+  background-image: url("../img/patterns/bg-7.jpg");
+  z-index: 7;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-8 .pattern-container {
+  background-image: url("../img/patterns/bg-8.jpg");
+  z-index: 8;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-9 .pattern-container {
+  background-image: url("../img/patterns/bg-9.jpg");
+  z-index: 9;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-10 .pattern-container {
+  background-image: url("../img/patterns/bg-10.jpg");
+  z-index: 10;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-11 .pattern-container {
+  background-image: url("../img/patterns/bg-11.jpg");
+  z-index: 11;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-12 .pattern-container {
+  background-image: url("../img/patterns/bg-12.jpg");
+  z-index: 12;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-13 .pattern-container {
+  background-image: url("../img/patterns/bg-13.jpg");
+  z-index: 13;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-14 .pattern-container {
+  background-image: url("../img/patterns/bg-14.jpg");
+  z-index: 14;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-15 .pattern-container {
+  background-image: url("../img/patterns/bg-15.jpg");
+  z-index: 15;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-16 .pattern-container {
+  background-image: url("../img/patterns/bg-16.jpg");
+  z-index: 16;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-17 .pattern-container {
+  background-image: url("../img/patterns/bg-17.jpg");
+  z-index: 17;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-18 .pattern-container {
+  background-image: url("../img/patterns/bg-18.jpg");
+  z-index: 18;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-19 .pattern-container {
+  background-image: url("../img/patterns/bg-19.jpg");
+  z-index: 19;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-20 .pattern-container {
+  background-image: url("../img/patterns/bg-20.jpg");
+  z-index: 20;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-21 .pattern-container {
+  background-image: url("../img/patterns/bg-21.jpg");
+  z-index: 21;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-22 .pattern-container {
+  background-image: url("../img/patterns/bg-22.jpg");
+  z-index: 22;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-23 .pattern-container {
+  background-image: url("../img/patterns/bg-23.jpg");
+  z-index: 23;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-24 .pattern-container {
+  background-image: url("../img/patterns/bg-24.jpg");
+  z-index: 24;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-25 .pattern-container {
+  background-image: url("../img/patterns/bg-25.jpg");
+  z-index: 25;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-26 .pattern-container {
+  background-image: url("../img/patterns/bg-26.jpg");
+  z-index: 26;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-27 .pattern-container {
+  background-image: url("../img/patterns/bg-27.jpg");
+  z-index: 27;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-28 .pattern-container {
+  background-image: url("../img/patterns/bg-28.jpg");
+  z-index: 28;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-29 .pattern-container {
+  background-image: url("../img/patterns/bg-29.jpg");
+  z-index: 29;
+}
+
+/* line 185, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-30 .pattern-container {
+  background-image: url("../img/patterns/bg-30.jpg");
+  z-index: 30;
+}
+
+/* line 212, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.steps-text {
+  text-transform: uppercase;
+  font-size: .5em;
+  margin-bottom: .25em;
+  display: block;
+  line-height: 1;
+}
+
+/* line 219, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-title-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 229, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-title {
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 42%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 1px 1px 14px rgba(0, 0, 0, 0.9);
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: 0;
+  max-width: 53%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.75em;
+  line-height: 1;
+}
+
+@media (min-width: 860px) {
+  /* line 229, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+  .section-title {
+    max-width: 40%;
+    font-size: 3em;
+    line-height: 1.2;
+    left: 55%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 229, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+  .section-title {
+    font-size: 3.5em;
+    line-height: 1.1;
+    left: 49%;
+  }
+}
+
+/* line 258, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_sections.scss */
+.section-title-container {
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  /* line 3, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+  html.ios {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* line 9, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+#numbah {
+  color: white;
+  position: fixed;
+  z-index: 9999;
+  top: 100px;
+  left: 0;
+}
+
+/* line 17, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.section-wrap.hollow:not(.active) * {
+  display: none;
+  pointer-events: none;
+  z-index: -2;
+}
+
+/* line 23, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+#numbah {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  display: block;
+  z-index: 120;
+  color: white;
+}
+
+/* line 32, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.section-wrap:not(.hollow) .device-container, .section-wrap:not(.hollow) .pattern-container {
+  will-change: transform;
+}
+
+/* line 35, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.section-wrap:not(.hollow) .section-title {
+  will-change: transform;
+}
+
+/* line 38, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.section-wrap:not(.hollow) .btn-pluss {
+  will-change: transform;
+}
+
+/* line 43, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.section-wrap .section-title {
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* line 50, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.section-wrap.active .section-title {
+  pointer-events: auto;
+  z-index: 2;
+}
+
+/* line 56, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.gar-logo {
+  display: block;
+  width: 35px;
+  z-index: 6;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/* line 63, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.gar-logo svg {
+  width: 100%;
+}
+
+/* line 68, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.device-cta {
+  position: absolute;
+  bottom: 0;
+  left: 127px;
+  z-index: 3;
+  background-image: url("../img/text-classic.svg");
+  background-size: 80px;
+  background-position: 127px 22px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 115px;
+  text-indent: -9999px;
+  height: 100%;
+}
+
+/* line 81, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.device-cta.sport {
+  background-image: url("../img/text-sport.svg");
+}
+
+/* line 84, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.device-cta.premium {
+  background-image: url("../img/text-premium.svg");
+}
+
+/* line 89, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.vivomove-logo {
+  width: 120px;
+  display: block;
+  height: 45px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  background-image: url("../img/vivomove-logo.svg");
+}
+
+/* line 101, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.vivomove-logo-wrap {
+  display: block;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  font-weight: 100;
+  text-indent: -9999px;
+  right: 117px;
+}
+
+/* line 115, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.pattern-container:after {
+  content: '';
+  display: block;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.23+0,0+7,0.29+41,0.29+60,0+100 */
+}
+
+@media (min-width: 860px) {
+  /* line 115, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+  .pattern-container:after {
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 115, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+  .pattern-container:after {
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+}
+
+/* line 137, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.overlay2 {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 140, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.download-wrap, .share-wrap {
+  margin-bottom: 10px;
+  z-index: 4;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* line 147, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.share-opts li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* line 151, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.share-opts li a {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 50px;
+  height: 50px;
+  text-indent: -9999px;
+  vertical-align: middle;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+/* line 162, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.share-opts li .facebook-icon {
+  background-size: 15px 30px;
+  background-image: url("../img/icon-facebook.svg");
+}
+
+/* line 166, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.share-opts li .twitter-icon {
+  background-size: 30px 25px;
+  background-image: url("../img/icon-twitter.svg");
+}
+
+/* line 173, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.download-cta, .share-cta {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* line 235, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.download-opts, .share-opts {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  max-width: 0;
+  -webkit-transition: 400ms ease-out;
+  -moz-transition: 400ms ease-out;
+  -o-transition: 400ms ease-out;
+  transition: 400ms ease-out;
+  overflow: hidden;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* line 245, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.active .download-opts, .active .share-opts {
+  max-width: 350px;
+}
+
+/* line 250, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.action-utility {
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  z-index: 5;
+  display: none;
+}
+
+/* line 258, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.download-opts li {
+  list-style: none;
+  margin-right: 20px;
+  display: inline-block;
+  padding: 0;
+  vertical-align: bottom;
+}
+
+/* line 265, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.download-opts li a {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: .65em;
+  font-weight: 100;
+  display: block;
+  position: relative;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  text-indent: -9999px;
+  border: 1px solid white;
+}
+
+/* line 280, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.download-opts li a:after {
+  content: '';
+  background-size: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 30px 25px;
+  background-position: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 297, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.download-opts .desktop-download:after {
+  background-image: url("../img/icon-desktop.svg");
+}
+
+/* line 302, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_index.scss */
+.download-opts .phone-download:after {
+  background-image: url("../img/icon-phone.svg");
+  background-size: 15px 30px;
+}
+
+@-moz-document url-prefix() {
+  /* line 2, /Users/engebretsen/Sites/site.vivomove/src/sass/pages/_firefox.scss */
+  .device-wrap, .pattern-wrap, .section-title-wrap {
+    clip: rect(0, auto, auto, 0);
+    clip-path: rectangle(0, 30px, 70%, 50%, 30px, 30px);
+    clip-path: url("../img/clippath.svg");
+  }
+}

@@ -10,40 +10,18 @@ Global typographic styles and resets
 }
 
 %sans-serif {
-  font-family: 'Open Sans', sans-serif;
+   font-family:'Knockout-HTF32-JuniorCruiserwt', 'Knockout', 'Open Sans', sans-serif;
+   font-weight:100;
 }
-
+%serif {
+  font-family: "bodoni-urw", 'Bodoni MT', Didot, 'Didot LT STD',sans-serif;
+}
 %caps {
   text-transform: uppercase;
   font-weight:100;
   letter-spacing:.1em;
 }
-
-html {
-  font-size: 18px;
-  color:$white;
-}
-a {
-  text-decoration:none;
-  color:white;
-  font-weight: 700;
-}
-h1 {
-  margin: 0.4em 0;
-  font-weight: 700;
-  color:white;
-  @extend %antialiased;
+h2, h1 {
+  @extend %serif;
 }
 
-p {
-  color:$text-grey;
-  font-size: .75em;
-  line-height:1.4
-}
-
-h1,h2,h3,h4 {
-  @extend %antialiased;
-}
-.text-center {
-  text-align:center;
-}

@@ -1,25 +1,7 @@
 ---
-# Basic template for a page that uses partials
-# Includes a loop that ids children according the the "parent" declaration in the file in the "_parts" directory
 
-
-layout: post
-title: Sample Content
-pre-title: Sample Pretitle
+layout: default
+title: airsaver
 ---
-
-<div class="main-content" id="maincontent">
-  <h2 class="subtitle" id="subtitle"></h2>
-      {% assign sorted_pages = (site.parts | sort: 'order') %}
-      {% for page in sorted_pages %}
-        {% if page.parent == 'samplecontent' %}
-          {% include section.html %}
-        {% endif %}
-      {% endfor %}
-</div>
-
-
-
-
 
 

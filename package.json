@@ -1,13 +1,20 @@
 {
-  "name": "jekyll-boilerplate-project",
+  "name": "vivomove-campaign",
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "~0.4.1",
+    "grunt-autoprefixer": "~0.6.4",
     "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-imagemin": "*",
     "grunt-contrib-uglify": "~0.2.7",
-    "grunt-contrib-imagemin": "~0.4.0",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-autoprefixer": "~0.6.4"
+    "grunt-http": "^2.0.1",
+    "load-grunt-tasks": "^3.5.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "latest",
+    "babel-preset-stage-0": "latest",
+    "babelify": "latest",
+    "grunt-browserify": "latest"
   },
   "dependencies": {
     "grunt-browser-sync": "^2.1.3",

@@ -1,0 +1,12 @@
+{% assign daddy_page = (page.url | replace:'/',' ' | truncatewords: 1 | remove:'...') %}
+{% if page.loc or (daddy_page contains '-') %}
+  {% if daddy_page contains '-' %}
+    {% assign language = (daddy_page | replace:'-',' ' | truncatewords: 1 | remove:'...') %}
+    {% assign locale = daddy_page %}
+  {% endif %}
+{% else %}
+    {% assign language = 'en' %}
+    {% assign locale = 'en-US' %}
+{% endif %}
+{% assign globaldata = site.translations | where:"loc", locale | where:"global-data", "true" %}
+{% assign sectiondata = site.translations | where:"type", "sectiondata" | where:"loc", locale | where:"listing", "index" %}
